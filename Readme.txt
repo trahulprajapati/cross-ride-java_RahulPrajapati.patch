@@ -61,7 +61,7 @@ Production Environment:
   all dependencies are included.
   2) Commit everything using (git add --all && git commit -m "My submission")
   3) Create patch file with name without spaces 'cross-ride-java_<YourNameHere>.patch', using the specified tag as the starting point (git format-patch initial-commit --stdout > cross-ride-java_<yournamehere>.patch)
-  4) Store your file in a shared location where Crossover team can access and download it for evaluati
+  4) Store your file  in  a shared location where Crossover team can access and download it for evaluati
   
   
   

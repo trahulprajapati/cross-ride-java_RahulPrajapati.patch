@@ -56,7 +56,21 @@ public class RideController {
       @RequestParam(value="max", defaultValue="5") Long count,
       @RequestParam(value="startTime", required=true) @DateTimeFormat(pattern="yyyy-MM-dd'T'HH:mm:ss") LocalDateTime startTime,
       @RequestParam(value="endTime", required=true) @DateTimeFormat(pattern="yyyy-MM-dd'T'HH:mm:ss") LocalDateTime endTime){
+	  
+	//  Integer endtim=new Integer(endTime);
+	  
+	//  LocalDateTime timeDiff=endTime-startTime;
     List<TopDriverDTO> topDrivers = new ArrayList<TopDriverDTO>();
+    
+    for(TopDriverDTO td:topDrivers){
+    	Long mxDr=td.getMaxRideDurationInSecods();
+    	String email=td.getEmail();
+    	String name=td.getName();
+    	Double avDist=td.getAverageDistance();
+    	
+    	
+    }
+    
     /**
      * Your Implementation Here. And Fill up topDrivers Arraylist with Top
      * 

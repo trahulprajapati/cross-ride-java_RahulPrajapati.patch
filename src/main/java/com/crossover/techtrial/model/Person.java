@@ -41,6 +41,18 @@ public class Person implements Serializable{
   @Column(name = "registration_number")
   String registrationNumber;
 
+  @Column(name = "person_type")
+  String persontype;
+  
+  public String getPersontype() {
+	return persontype;
+  }
+
+	public void setPersontype(String persontype) {
+		this.persontype = persontype;
+	}
+
+  
   public Long getId() {
     return id;
   }
@@ -80,6 +92,7 @@ public class Person implements Serializable{
     result = prime * result + ((email == null) ? 0 : email.hashCode());
     result = prime * result + ((id == null) ? 0 : id.hashCode());
     result = prime * result + ((name == null) ? 0 : name.hashCode());
+    result = prime * result + ((persontype == null) ? 0 : name.hashCode());
     result = prime * result + ((registrationNumber == null) ? 0 : registrationNumber.hashCode());
     return result;
   }
@@ -103,11 +116,18 @@ public class Person implements Serializable{
         return false;
     } else if (!id.equals(other.id))
       return false;
+    
     if (name == null) {
       if (other.name != null)
         return false;
     } else if (!name.equals(other.name))
       return false;
+    if (persontype == null) {
+        if (other.persontype != null)
+          return false;
+      } else if (!persontype.equals(other.persontype))
+        return false;
+      
     if (registrationNumber == null) {
       if (other.registrationNumber != null)
         return false;
@@ -118,7 +138,7 @@ public class Person implements Serializable{
 
   @Override
   public String toString() {
-    return "Person [id=" + id + ", name=" + name + ", email=" + email + ", registrationNumber=" + registrationNumber + "]";
+    return "Person [id=" + id + ", name=" + name + ", email=" + email + ", registrationNumber=" + registrationNumber + ", persontype=" + persontype + "]";
   }
   
   

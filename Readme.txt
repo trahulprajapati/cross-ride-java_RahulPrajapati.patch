@@ -12,7 +12,7 @@ Notes:
     - The driver can enter shared rides with overlapping entries. Like 1 shared ride from
      2018-08-24 09:00 to 2018-08-24 10:00 and another ride with start time 2018-08-24 09:30 to 
      2018-08-24 10:10.
-    - Frontend application is out of our scope. It is a separate, fully-functioning application
+    - Frontend  application is out of our scope. It is a separate, fully-functioning application
      handled by another team, so we do not want to modify it.
     
 Tasks:

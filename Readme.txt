@@ -35,7 +35,7 @@ We'll be evaluating your submission from the following perspectives:
 Prerequisites:
     Any IDE
     GIT
-    Java 8
+    Java 8r
     MySQL 5.6+
 
 Development Environment:

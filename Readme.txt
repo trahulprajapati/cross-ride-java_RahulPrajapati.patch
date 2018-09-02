@@ -54,7 +54,7 @@ Development Environment:
   Cross-Ride Application:
     To start the application run CrossRideApplication.java main method from your IDE.
 
-Production Environment:
+Production Envir onment:
   This is how we are going to run and evaluate your submission, so please make sure to run below steps before submitting your answer.
 
   1) Make sure to run unit tests, check code coverage, ensure the application is compiling and 
